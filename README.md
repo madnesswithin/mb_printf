@@ -2,16 +2,16 @@
 Re-implementing the inbuilt printf functionality in my own function
 *This project has been created as part of the 42 curriculum by mbabu.*
 
-# ft_printf 42 Project
+## ft_printf 42 Project
 
-## Description
+### Description
 
 `ft_printf` is a reimplementation of the C standard library `printf()` function.
 It handles a variable number of arguments using variadic functions (`stdarg.h`) and supports the following format conversions: `%c`, `%s`, `%p`, `%d`, `%i`, `%u`, `%x`, `%X`, `%%`.
 
 The function returns the total number of czzharacters printed, just like the original.
 
-### Variadic Functions
+#### Variadic Functions
 
 In this project we learned about the concept of variadic functions and macros.
 
@@ -20,7 +20,7 @@ In this project we learned about the concept of variadic functions and macros.
 `va_arg (args, type);` returns the value at the current position and advances the pointer by sizeof(type), to the next argument.
 `va_end (args);` is run once your function has run; frees memory (on some systems)
 
-## Instructions
+### Instructions
 
 **Compile the library (Linux/Mac):**
 
@@ -57,7 +57,7 @@ ft_printf("Hello %s, you are %d years old.\n", "world", 42);
 - `make fclean` — remove object files and library
 - `make re` — full rebuild
 
-## Algorithm and Data Structure
+### Algorithm and Data Structure
 
 The implementation uses a single-pass loop over the format string.
 When a `%` is encountered, the next character is passed to a static helper
@@ -87,14 +87,14 @@ on the way back up. For example, `ft_unsignputnbr(423)`:
 `n % 10` extracts the last digit; `+ '0'` converts it to its ASCII character (e.g. digit `3` → `'3'`).
 The recursion ensures digits print left to right without needing a temporary buffer.
 
-## Resources
+### Resources
 
 - [printf man page](https://man7.org/linux/man-pages/man3/printf.3.html)
 - [Variadic functions in C - cppreference](https://en.cppreference.com/w/c/variadic)
 - [42 Norm](https://github.com/42School/norminette)
 - [Claude](https://claude.ai/)
 
-### AI Usage
+#### AI Usage
 
 Claude (claude.ai) was used during this project for the following tasks:
 
