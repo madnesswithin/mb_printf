@@ -1,5 +1,5 @@
 # mb_printf
-Re-implementing the inbuilt printf functionality in my own function
+Re-implementing the inbuilt printf functionality in my own function.
 *This project has been created as part of the 42 curriculum by mbabu.*
 
 ## ft_printf 42 Project
